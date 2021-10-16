@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@600&display=swap');
+
+body{
+    background-color: lightblue;
+}
+
+.navigation { 
+    border-bottom: 1px solid #ccc;
+    padding: .5em 1em;
+  }
+
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.smile_logo {
+    float: left;
+}
+
+#hygge{
+    font-family: 'Gluten', cursive;
+    color: darkblue;
+    font-size: 1.5em;
+    margin: .7em 0 .3em 0;
+    display: inline-block;
+}
+
+.smile_logo img {
+    max-width: 55px;
+    float: left;
+    margin: 0 10px 0 0;
+  }
+
+.nav_right{
+    float: right;
+}
+
+.nav_right ul, li{
+    margin: 0; 
+    padding: 0;
+}
+
+.nav_right li {
+    display: inline-block;
+    margin: 1.4em 1em 1em 1em;
+    list-style: none;
+}
+.nav_right li a { 
+    text-decoration: none;
+  }
+
+
+
+a:focus{
+    color: darkred;
+}
+
+a:hover{
+    color: white;
+    border-radius: 0px 5px 5px 0px;
+    background-color: darkblue;
+    
+}
+
+a:active{
+    background-color: darkblue;
+}
+
+main{
+    padding: 5em;
+    width: 40%;
+    background-color: white;
+    margin: 18em;
+
+}
+main img {
+    max-width: 100%;
+  }
+
+h1{
+    font-size: 44px;
+    font-family: 'Gluten', cursive;
+    color: darkblue;
+    text-align: center;
+}
+button{
+    align-content: center;
+}
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: salmon;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+  
+.button:hover {background-color: blue}
+  
+.button:active {
+    background-color: darkblue;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+
+@media screen and (max-width: 500px) {
+  .smile_logo {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .nav_right li {
+    float: none;
+  }
+  main{
+      width: 50%;
+  }
+}
+
+
+
+
+
