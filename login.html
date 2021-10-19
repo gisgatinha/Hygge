@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/login.css" id="stylesheet" rel="stylesheet">
+    <title>Login</title>
+    <link rel="icon" type="image/png" href="smile.png"/>
+
+</head>
+<header>
+    <nav class="navigation">
+        <div class="smile_logo">
+            <a href="home.html"><img class="logo" src="smile.png" alt="logo hygge, to emoji faces smiling"></a>
+            <span id="hygge">Hygge</span>
+        </div>
+        <ul class="nav_right">
+          <li><a href="home.html">Home</a></li>
+          <li><a class="active" href="login.html">Logg inn</a></li>
+          <li><a href="registrering.html">Registre seg</a></li>
+      </ul>
+    </nav>
+</header>
+<body>
+
+  <!-- Form logg inn--> 
+
+    <h1>Login Form</h1>  
+
+    <form action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <img src="smile.png" alt="Logo hygge" class="avatar">
+      </div>
+    
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+    
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+            
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+    
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" class="cancelbtn" onclick="document.location='home.html'">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+        <p>Har ikke du konto ennå?<button class="button" onclick="document.location='registrering.html'">Registre seg</button></p>
+      </div>
+    </form>
+    
+    <footer>
+        &copy Prosjekt 13 - Systemutvikling - Høst 2021
+    </footer>
+</body>
+</html>
+
+
