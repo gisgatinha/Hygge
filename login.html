@@ -28,7 +28,8 @@
 
     <h1>Login Form</h1>  
 
-    <form action="/action_page.php" method="post">
+    <form action="calender/calendar_date-time-picker.html" method="post"></form>
+    <!--<form action="/action_page.php" method="post">-->
       <div class="imgcontainer">
         <img src="smile.png" alt="Logo hygge" class="avatar">
       </div>
@@ -40,16 +41,16 @@
         <label for="psw"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="psw" required>
             
-        <button type="submit">Login</button>
+        <button class="button" onclick="document.location='calender/calendar_date-time-picker.html'">Login</button>
         <label>
           <input type="checkbox" checked="checked" name="remember"> Remember me
         </label>
       </div>
     
       <div class="container" style="background-color:#f1f1f1">
-        <button type="button" class="cancelbtn" onclick="document.location='home.html'">Cancel</button>
+        <!--<button type="button" class="cancelbtn" onclick="document.location='home.html'">Cancel</button>-->
         <span class="psw">Forgot <a href="#">password?</a></span>
-        <p>Har ikke du konto ennå?<button class="button" onclick="document.location='registrering.html'">Registre seg</button></p>
+        <p class="registrering">Har ikke du konto ennå?  <button class="button_reg" onclick="document.location='registrering.html'">Registre seg</button></p>
       </div>
     </form>
     

@@ -100,6 +100,19 @@ button {
   cursor: pointer;
   width: 100%;
 }
+.button_reg{
+  background-color: lightpink;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: initial;
+
+}
+.registrering{
+  text-align: right;
+}
 
 button:hover {
   opacity: 0.8;
@@ -116,7 +129,7 @@ button:hover {
 }
 
 span.psw {
-  float: right;
+  float: left;
   padding-top: 16px;
 }
 
