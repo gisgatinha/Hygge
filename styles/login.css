@@ -26,7 +26,7 @@ header::after {
 }
 
 .smile_logo img {
-    max-width: 55px;
+    max-width: 50px;
     float: left;
     margin: 0 10px 0 0;
   }
@@ -53,6 +53,7 @@ header::after {
     display: inline-block;
     margin: 1.4em 1em 1em 1em;
     list-style: none;
+    font-size: 12px;
 }
 .nav_right li a { 
     text-decoration: none;
@@ -98,8 +99,9 @@ button {
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
+  /*width: 100%;*/
 }
+
 .button_reg{
   background-color: lightpink;
   color: white;
@@ -149,7 +151,7 @@ footer{
 
 
 /* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 700px) {
   span.psw {
      display: block;
      float: none;

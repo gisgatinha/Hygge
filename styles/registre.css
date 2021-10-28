@@ -25,7 +25,7 @@ header::after {
 }
 
 .smile_logo img {
-    max-width: 55px;
+    max-width: 50px;
     float: left;
     margin: 0 10px 0 0;
   }
@@ -52,13 +52,14 @@ header::after {
     display: inline-block;
     margin: 1.4em 1em 1em 1em;
     list-style: none;
+    font-size: 12px;
 }
 .nav_right li a { 
     text-decoration: none;
   }
 
 .active{
-    color: purple;
+    color: rgb(214, 175, 214);
     font-weight: bold;
 }
 
@@ -116,7 +117,7 @@ button:hover {
 /* Extra styles for the cancel button */
 .cancelbtn {
   padding: 14px 20px;
-  background-color: rgb(214, 175, 214);
+  background-color: #fd7e14;
 }
 
 /* Float cancel and signup buttons and add an equal width */

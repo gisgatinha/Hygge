@@ -29,7 +29,7 @@ header::after {
 }
 
 .smile_logo img {
-    max-width: 55px;
+    max-width: 50px;
     float: left;
     margin: 0 10px 0 0;
   }
@@ -45,8 +45,9 @@ header::after {
 
 .nav_right li {
     display: inline-block;
-    margin: 1.4em 1em 1em 1em;
+    margin: 1em 1em 1em 1em;
     list-style: none;
+    font-size: 12px;
 }
 .nav_right li a { 
     text-decoration: none;
@@ -94,8 +95,8 @@ button{
 }
 .button {
     display: inline-block;
-    padding: 15px 25px;
-    font-size: 24px;
+    padding: 5px 10px;
+    font-size: 20px;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
@@ -130,15 +131,19 @@ footer{
 }
 
 @media screen and (max-width: 768px) {
-  .smile_logo {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .nav_right li {
-    float: none;
-  }
+nav-right {
+    margin: auto;
+};
+
+.buttons{
+    display: inline-block;
+}
+.button{
+    font-size: 10px;
+    width: 50%;
+}
+    
+
   main{
      margin: 2em;
   }
