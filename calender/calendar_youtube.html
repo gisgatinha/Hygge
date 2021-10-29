@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="icon" type="image/png" href="../smile.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@500&display=swap" rel="stylesheet">
+ 
+    <title>Kalender</title>
+
+    <!-- Mobiscroll JS and CSS Includes -->
+    <link rel="stylesheet" href="css/mobiscroll.javascript.min.css">
+    <script src="js/mobiscroll.javascript.min.js"></script>
+
+    <style type="text/css">
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: lightblue;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    button {
+        display: inline-block;
+        margin-left: 30%;
+        margin-right: 30%;
+        padding: 10px 30px;
+        outline: 0;
+        border: 0;
+        cursor: pointer;
+        background-color: #fd7e14;
+        color: #fff;
+        text-decoration: none;
+        font-family: arial, verdana, sans-serif;
+        font-size: 14px;
+        font-weight: 100;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+    }
+
+    a:hover{
+    color: white;
+    border-radius: 0px 5px 5px 0px;
+    background-color: darkblue;
+    
+}
+
+    input, select, textarea {
+       /* width: 100%;*/
+        margin: 0 0 5px 0;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 0;
+        font-family: arial, verdana, sans-serif;
+        font-size: 14px;
+        box-sizing: border-box;
+        -webkit-appearance: none;
+    }
+    .kontakt input, #aktivitet, .label_text textarea{
+        width: 100%;
+    }
+    .label_text{
+        vertical-align: middle;
+    }
+
+    .mbsc-page {
+        padding: 1em;
+    }
+
+
+.navigation { 
+    border-bottom: 1px solid #ccc;
+    padding: .5em 1em;
+  }
+
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.smile_logo {
+    float: left;
+}
+
+#hygge{
+    font-family: 'Gluten', cursive;
+    color: darkblue;
+    font-size: 1.5em;
+    margin: .7em 0 .3em 0;
+    display: inline-block;
+}
+
+.smile_logo img {
+    max-width: 50px;
+    float: left;
+    margin: 0 10px 0 0;
+  }
+
+.nav_right{
+    float: right;
+}
+
+.nav_right ul, li{
+    margin: 0; 
+    padding: 0;
+}
+
+.nav_right li {
+    display: inline-block;
+    margin: 1.4em 1em 1em 1em;
+    list-style: none;
+    font-size: 12px;
+}
+.nav_right li a { 
+    text-decoration: none;
+  }
+  footer{
+    position: static; 
+    bottom: 0%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80%;
+    width: 100%;
+    color:darkblue;
+    padding: 1em;
+    margin-top: 3pt;
+}
+
+    </style>
+
+</head>
+<header>
+    <nav class="navigation">
+        <div class="smile_logo">
+            <img class="logo" src="../smile.png" alt="to emoji faces smiling">
+            <span id="hygge">Hygge</span>
+        </div>
+        <ul class="nav_right">
+            <li><a href="../home.html">Home</a></li>
+            <li><a href="../login.html">Logg inn</a></li>
+            <li><a href="../registrering.html">Registrere seg</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+<form action="" method="GET">
+    <fieldset class="kontakt">
+        <legend>
+            Kontaktinformasjon
+        </legend>
+        <label for="Brukernavn: "></label>
+        <input type="text" name="username" id="name" 
+        required autofocus placeholder="Navn"
+        pattern="[a-zA-Z]{3,}" title="Minimum 3 bokstaver">
+
+        <label for="email"></label>
+        <input type="text" name="email" id="email" 
+        required placeholder="Email adresse" pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}" 
+        title="Oppgi en gyldig e-post adresse" >
+
+        <label for="phone" Telefon: ></label>
+        <input type="tel" name="phone" id="phone" required placeholder="Telefon"
+        pattern="[0-9]{4}[0-9]{2}[0-9]{2}" required placeholder="Fyll telefonen i dette formatet: 9999 99 99">
+    </fieldset>
+    <fieldset class="dato">
+        <legend>
+            Velg en dato
+        </legend>
+        <label for="dato"></label>
+        <input id="dato" type="date" name="dato" min="29-10-2021">
+        <label for="tid">Klokkeslett: </label>
+        <select id="tid" name="velg_tidspunkt">
+            <option value="11">11:00</option>
+            <option value="11,5">11:30</option>
+            <option value="13,5">13:30</option>
+            <option value="14">14:30</option>
+        
+          </select>
+    
+        <p>
+            <label for="aktivitet">Aktivitetstype:</label>
+            <select id="aktivitet" name="forslag_aktivitet">
+            <option value="les">Les bok</option>
+            <option value="tur">Gå på tur</option>
+            <option value="steke">Steke vafler/ svele</option>
+            <option value="spille">Spille gitar / piano / trekspill</option>
+            <option value="barn">Ta med barn</option>
+            <option value="dyr">Ta med dyr</option>
+            <option value="annet">Annet</option>
+            </select>
+        </p>
+
+        <p class="label_text">
+            <label for="annet">Annet:</label>
+            <textarea name="message" rows="2"></textarea>
+        </p>
+
+        <p>
+            <label for="antall">Antall deltakere:</label>
+            <input id="antal" type="number" name="Antall frivillige" min="1" max="40">
+        </p>
+
+        <p class="label_text">
+            <label for="komment">Kommenterer:</label>
+            <textarea name="message" rows="5"></textarea>
+        </p>
+        
+        <p>
+            <button class="button" alt="Blid med" onclick="document.location='../suksess.html'">Bli med</button>
+        </p>
+    </fieldset>
+    
+</form>
+
+<footer>
+    &copy Prosjekt 13 - Systemutvikling - Høst 2021
+</footer>
+</body>
+</html>
