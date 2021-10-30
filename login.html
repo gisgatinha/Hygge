@@ -7,6 +7,7 @@
     <link href="styles/login.css" id="stylesheet" rel="stylesheet">
     <title>Login</title>
     <link rel="icon" type="image/png" href="smile.png"/>
+    <script type=text/javascript src="js/submit.js"> </script>
 
 </head>
 <header>
@@ -18,7 +19,7 @@
         <ul class="nav_right">
           <li><a href="home.html">Home</a></li>
           <li><a class="active" href="login.html">Logg inn</a></li>
-          <li><a href="registrering.html">Registre seg</a></li>
+          <li><a href="registrering.html">Registrere seg</a></li>
       </ul>
     </nav>
 </header>
@@ -28,31 +29,33 @@
 
     <h1>Login Form</h1>  
 
-    <form action="calender/calendar_date-time-picker.html" method="post"></form>
-    <!--<form action="/action_page.php" method="post">-->
-      <div class="imgcontainer">
-        <img src="smile.png" alt="Logo hygge" class="avatar">
-      </div>
+    <div class="imgcontainer">
+      <img src="smile.png" alt="Logo hygge" class="avatar">
+    </div>
+  
+    <form action="calender/calendar_logged.html" method="POST">
+     
+        <label for="navn"><b>Brukernavn</b></label>
+        <input type="text" id="navn" placeholder="Brukernavn" name="navn" required>
+        <label for="psw"><b>Passord</b></label>
+        <input type="password" id="pwd" placeholder="Passord" name="psw" required>
+        <input class="button" type="submit" onclick="handleSubmit()"/>
+    </form>
+        <p>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </p>
     
       <div class="container">
-        <label for="uname"><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" required>
-    
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
-            
-        <button class="button" onclick="document.location='calender/calendar_youtube.html'">Login</button>
-        <label>
-          <input type="checkbox" checked="checked" name="remember"> Remember me
-        </label>
-      </div>
-    
-      <div class="container" style="background-color:#f1f1f1">
         <!--<button type="button" class="cancelbtn" onclick="document.location='home.html'">Cancel</button>-->
-        <span class="psw">Forgot <a href="#">password?</a></span>
-        <p class="registrering">Har ikke du konto ennå?  <button class="button_reg" onclick="document.location='registrering.html'">Registre seg</button></p>
+        <span class="psw">Glemte <a href="#">passord?</a></span>
+        <p
+          class="registrering">Har ikke du konto ennå?  
+          <button class="button_reg" onclick="document.location='registrering.html'">Registrere seg</button>
+        </p>
       </div>
-    </form>
+    
     
     <footer>
         &copy Prosjekt 13 - Systemutvikling - Høst 2021

@@ -54,7 +54,7 @@ header::after {
   }
 
 .active{
-    color: purple;
+    color: #fd7e14;
     font-weight: bold;
 }
 
