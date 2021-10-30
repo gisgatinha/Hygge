@@ -11,134 +11,16 @@
     <title>Kalender</title>
     <script type=text/javascript src="../js/logged.js"></script>
 
-    <!--
-    <style type="text/css">
-    body {
-        margin: 0;
-        padding: 0;
-        background-color: lightblue;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    button {
-        display: inline-block;
-        margin-left: 30%;
-        margin-right: 30%;
-        padding: 10px 30px;
-        outline: 0;
-        border: 0;
-        cursor: pointer;
-        background-color: #fd7e14;
-        color: #fff;
-        text-decoration: none;
-        font-family: arial, verdana, sans-serif;
-        font-size: 14px;
-        font-weight: 100;
-        border-radius: 15px;
-        box-shadow: 0 9px #999;
-    }
-
-    a:hover{
-    color: white;
-    border-radius: 0px 5px 5px 0px;
-    background-color: darkblue;
-    
-}
-
-    input, select, textarea {
-    
-        margin: 0 0 5px 0;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 0;
-        font-family: arial, verdana, sans-serif;
-        font-size: 14px;
-        box-sizing: border-box;
-        -webkit-appearance: none;
-    }
-    .kontakt input, #aktivitet, .label_text textarea{
-        width: 100%;
-    }
-    .label_text{
-        vertical-align: middle;
-    }
-
-    .mbsc-page {
-        padding: 1em;
-    }
-
-
-.navigation { 
-    border-bottom: 1px solid #ccc;
-    padding: .5em 1em;
-  }
-
-header::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.smile_logo {
-    float: left;
-}
-
-#hygge{
-    font-family: 'Gluten', cursive;
-    color: darkblue;
-    font-size: 1.5em;
-    margin: .7em 0 .3em 0;
-    display: inline-block;
-}
-
-.smile_logo img {
-    max-width: 50px;
-    float: left;
-    margin: 0 10px 0 0;
-  }
-
-.nav_right{
-    float: right;
-}
-
-.nav_right ul, li{
-    margin: 0; 
-    padding: 0;
-}
-
-.nav_right li {
-    display: inline-block;
-    margin: 1.4em 1em 1em 1em;
-    list-style: none;
-    font-size: 12px;
-}
-.nav_right li a { 
-    text-decoration: none;
-  }
-  footer{
-    position: static; 
-    bottom: 0%;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 80%;
-    width: 100%;
-    color:darkblue;
-    padding: 1em;
-    margin-top: 3pt;
-}
-
-    </style> -->
-
 </head>
 <header>
     <nav class="navigation">
         <div class="smile_logo">
-            <img class="logo" src="../smile.png" alt="to emoji faces smiling">
+            <a href="../home.html"><img class="logo" src="../smile.png" alt="logo Hygge: to emoji-ansikter som smiler"></a>
             <span id="hygge">Hygge</span>
         </div>
         <ul class="nav_right">
             <li><a href="../home.html">Home</a></li>
-            <li><a href="../login.html">Logg inn</a></li>
+            <li><a href="../home.html">Logg ut</a></li>
             <li><a href="../registrering.html">Registrere seg</a></li>
         </ul>
     </nav>
@@ -193,9 +75,10 @@ header::after {
             <textarea name="message" rows="5"></textarea>
         </p>
         
-        <p>
+        
             <button class="button" alt="Blid med" onclick="document.location='../suksess.html'">Bli med</button>
-        </p>
+            <button type="button" class="cancelbtn" onclick="document.location='../home.html'">Cancel</button>
+        
     </fieldset>
     
 </form>

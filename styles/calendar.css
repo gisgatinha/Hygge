@@ -1,43 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@600&display=swap');
 
-    body {
-        margin: 0;
-        padding: 0;
-        background-color: lightblue;
-        font-family: Arial, Helvetica, sans-serif;
-    }
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10em;
+    margin-right: 10em;
+}
 
-    h1{
-        font-size: 34px;
-        font-family: 'Gluten', cursive;
-        color: darkblue;
-        text-align: center;
-    }
-    h2{
-        margin-left:2em;
-        color: indigo;
-    }
-    fieldset{
-        color: indigo;
-    }
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
-    button {
-        display: inline-block;
-        margin-left: 30%;
-        margin-right: 30%;
-        padding: 10px 30px;
-        outline: 0;
-        border: 0;
-        cursor: pointer;
-        background-color: #fd7e14;
-        color: #fff;
-        text-decoration: none;
-        font-family: arial, verdana, sans-serif;
-        font-size: 14px;
-        font-weight: 100;
-        border-radius: 15px;
-        box-shadow: 0 9px #999;
-    }
+.smile_logo {
+    float: left;
+}
 
+#hygge, h1{
+    font-family: 'Gluten', cursive;
+    color: darkblue;
+    font-size: 1.5em;
+    margin: .7em 0 .3em 0;
+    display: inline-block;
+}
+h2{
+    /*margin-left:2em;*/
+    color: indigo;
+}
+
+.smile_logo img {
+    max-width: 50px;
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.nav_right{
+    float: right;
+}
+
+.nav_right ul, li{
+    margin: 0; 
+    padding: 0;
+}
+
+.nav_right li {
+    display: inline-block;
+    margin: 1.4em 1em 1em 1em;
+    list-style: none;
+    font-size: 12px;
+}
+.nav_right li a { 
+    text-decoration: none;
+}
+
+fieldset{
+    color: indigo;
+}
+
+button, .button {
+    background-color: #fd7e14;
+    color: white;
+    padding: 14px 64px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .button_reg, .cancelbtn{
+    background-color: gray;
+    color: white;
+    padding: 14px 64px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: initial;
+  
+  }
     a:hover{
     color: white;
     border-radius: 0px 5px 5px 0px;
@@ -59,6 +103,9 @@
     .kontakt input, #aktivitet, .label_text textarea{
         width: 100%;
     }
+    label{
+        font-weight: bold;
+      }
     .label_text{
         vertical-align: middle;
     }
@@ -67,57 +114,9 @@
         padding: 1em;
     }
 
-
-.navigation { 
-    border-bottom: 1px solid #ccc;
-    padding: .5em 1em;
-  }
-
-header::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.smile_logo {
-    float: left;
-}
-
-#hygge{
-    font-family: 'Gluten', cursive;
-    color: darkblue;
-    font-size: 1.5em;
-    margin: .7em 0 .3em 0;
-    display: inline-block;
-}
-
-.smile_logo img {
-    max-width: 50px;
-    float: left;
-    margin: 0 10px 0 0;
-  }
-
-.nav_right{
-    float: right;
-}
-
-.nav_right ul, li{
-    margin: 0; 
-    padding: 0;
-}
-
-.nav_right li {
-    display: inline-block;
-    margin: 1.4em 1em 1em 1em;
-    list-style: none;
-    font-size: 12px;
-}
-.nav_right li a { 
-    text-decoration: none;
-  }
   footer{
     position: static; 
-    bottom: 0%;
+    bottom: 1%;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 80%;
@@ -127,3 +126,14 @@ header::after {
     margin-top: 3pt;
 }
 
+@media screen and (max-width: 700px) {
+body {
+
+    margin-left: 2em;
+    margin-right: 2em;
+}
+button, .cancelbtn, .button {
+  
+    width: 100%;
+ }
+}

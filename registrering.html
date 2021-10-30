@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/login.css" id="stylesheet" rel="stylesheet">
-    <title>registrering</title>
+    <title>Registrering</title>
     <link rel="icon" type="image/png" href="smile.png"/>
+    <script type=text/javascript src="js/submit.js"> </script>
 
 </head>
 <header>
-    <nav class="navigation">
-        <div class="smile_logo">
-            <img class="logo" src="smile.png" alt="Logo hygge, to emoji faces smiling">
-            <span id="hygge">Hygge</span>
-        </div>
+    <div class="smile_logo">
+        <a href="home.html"><img class="logo" src="smile.png" alt="logo Hygge: to emoji-ansikter som smiler"></a>
+        <span id="hygge">Hygge</span>
+    </div>
         <ul class="nav_right">
           <li><a href="home.html">Home</a></li>
           <li><a href="login.html">Logg inn</a></li>
@@ -23,21 +23,33 @@
     </nav>
 </header>
 <body>
-      <form class="modal-content" action="/action_page.php">
+      <form action="calender/calendar_logged.html" method="POST">
           
             <h1>Registrering</h1>
             <p>Fyll ut dette skjemaet for å opprette en konto</p>
+
             <fieldset class="kontakt">
             
-                <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="Skriv epost adresse" name="email" required>
+                <label for="navnet">Navn</label>
+                <input type="text" placeholder="Skriv navn" name="navnet" required>
+
+                <label for="phone"> Telefon: </label>
+                <input type="tel" name="phone" id="phone" required autofocus placeholder="Telefon nummer">
             
-                <label for="psw"><b>Passord</b></label>
-                <input type="password" placeholder="Passord" name="psw" required>
-            
-                <label for="psw-repeat"><b>Gjenta Passord</b></label>
+                <label for="email">E-mail:</label>
+                <input type="text" name="email" id="email" required autofocus placeholder="E-post adresse">
+
+                <label for="navn">Brukernavn:</label>
+                <input type="text" id="navn" placeholder="Brukernavn" name="navn" 
+                required autofocus placeholder="Brukernavn">
+                           
+                <label for="psw">Passord:</label>
+                <input type="password" id="pwd" placeholder="Passord" name="psw" required>  
+                <label for="psw-repeat">Gjenta Passord</label>
                 <input type="password" placeholder="Skriv passord på nytt" name="psw-repeat" required>
+
             </fieldset>
+
               <label>
                   <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
               </label>
@@ -45,7 +57,7 @@
               <p>Ved å opprette en konto godtar du vår <a href="#" >vilkår & personvern</a>.</p>
       
            
-              <button type="submit" class="signupbtn">Send inn</button>
+              <input class="button" type="submit" onclick="handleSubmit()"/>
               <button type="button" class="cancelbtn" onclick="document.location='home.html'">Cancel</button>
     
       </form>

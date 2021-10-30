@@ -5,14 +5,16 @@ body{
     background-color: lightblue;
     font-family: Arial, Helvetica, sans-serif;
     color: darkblue;
+    margin-left: 10em;
+    margin-right: 10em;
 }
 
 header::after {
     content: "";
     display: table;
     clear: both;
-}
 
+}
 .smile_logo {
     float: left;
   
@@ -27,21 +29,22 @@ header::after {
 }
 
 .smile_logo img {
-    max-width: 50px;
-    float: left;
-    margin: 0 10px 0 0;
-  }
+  max-width: 50px;
+  float: left;
+  margin: 0 10px 0 0;
+}
 
-  .imgcontainer {
-    text-align: center;
+.imgcontainer {
+  text-align: center;
 
-  }
-  
-  img.avatar {
-    width: 30%;
-    /*border-radius: 50%; */
-  }
-  .nav_right{
+}
+
+img.avatar {
+  width: 20%;
+  /*border-radius: 50%; */
+}
+
+.nav_right{
     float: right;
 }
 
@@ -80,7 +83,9 @@ a:active{
     background-color: darkblue;
 }
 
-input[type=text], input[type=password] {
+* {box-sizing: border-box;}
+
+input[type=text], input[type=password], input[type=tel] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -89,10 +94,14 @@ input[type=text], input[type=password] {
   box-sizing: border-box;
 }
 
+label{
+  font-weight: bold;
+}
+
 button, .button {
   background-color: #fd7e14;
   color: white;
-  padding: 14px 20px;
+  padding: 14px 64px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
@@ -104,7 +113,7 @@ button, .button {
 .button_reg, .cancelbtn{
   background-color: gray;
   color: white;
-  padding: 14px 20px;
+  padding: 14px 64px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
@@ -113,6 +122,10 @@ button, .button {
 }
 .registrering{
   text-align: left;
+}
+.suksess{
+  font-size: 20px;
+  margin-top: 50px;
 }
 
 .button:hover, .button_reg:hover {
@@ -135,7 +148,7 @@ span.psw {
 
 footer{
   position: static; 
-  bottom: 0%;
+  bottom: 1%;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 80%;
@@ -145,9 +158,17 @@ footer{
 
 }
 
+.takk_registrering{
+  position: fixed;
+}
+
 
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 700px) {
+  body{
+    margin-left: 2em;
+    margin-right: 2em;
+  }
   span.psw {
      display: block;
      float: none;
