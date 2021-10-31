@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-    window.open("calendar_logged.html");
+    /*window.open("calendar_logged.html");*/
     
     const name = localStorage.getItem('NAME');
 
