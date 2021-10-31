@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="icon" type="image/png" href="../smile.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@500&display=swap" rel="stylesheet">
+    <link href="../styles/calendar.css" id="stylesheet" rel="stylesheet">
+    <title>Kalender</title>
+    <script type=text/javascript src="../js/logged.js"></script>
+
+</head>
+<header>
+    <nav class="navigation">
+        <div class="smile_logo">
+            <a href="../home.html"><img class="logo" src="../smile.png" alt="logo Hygge: to emoji-ansikter som smiler"></a>
+            <span id="hygge">Hygge</span>
+        </div>
+        <ul class="nav_right">
+            <li><a href="../home.html">Home</a></li>
+            <li><a href="../home.html">Logg ut</a></li>
+            <li><a href="../registrering.html">Registrere seg</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <h1>Avtale besøk/aktivitet</h1>
+    <h2>Hei, <span id='navn'></span></h2>   
+   <fieldset class="sted">
+    <legend>
+        Velg et sted
+    </legend>
+    <select id="sted" name="sted">
+        <option value="velg">- velg -</option>
+        <option value="Fana">Fana Omsorgsenter</option>
+        <option value="Fantoft">Fantoft omsorgssenter</option>
+        <option value="Johannessenteret">Johannessenteret Omsorg</option>
+        <option value="Midtbydga">Midtbydga Sykehjem</option>
+        <option value="Åstveit">Åstveit Sykehjem</option>
+    </select>
+    </fieldset>
+    <fieldset class="dato">
+        <legend>
+            Velg en dato
+        </legend>
+        <label for="dato"></label>
+        <input id="dato" type="date" name="dato" min="29-10-2021">
+        <label for="tid">Klokkeslett: </label>
+        <select id="tid" name="velg_tidspunkt">
+            <option value="11">11:00</option>
+            <option value="11,5">11:30</option>
+            <option value="13,5">13:30</option>
+            <option value="14">14:30</option>
+            <option value="13,5">17:00</option>
+            <option value="14">17:30</option>
+            <option value="14">18:00</option>
+        
+        </select>
+    
+        <p>
+            <label for="aktivitet">Aktivitetstype:</label>
+            <select id="aktivitet" name="forslag_aktivitet">
+                <option value="les">Les bok / fortelle historie</option>
+                <option value="tur">Gå på tur</option>
+                <option value="steke">Steke vafler/ svele</option>
+                <option value="les">Spille sjakk eller kortspill</option>
+                <option value="spille">Spille gitar / piano / trekspill</option>
+                <option value="dyr">Komme på besøk med dyr</option>
+                <option value="barn">Komme på besøk med barn</option>
+                <option value="annet">Annet</option>
+            </select>
+        </p>
+
+        <p class="label_text">
+            <label for="annet">Annet:</label>
+            <textarea name="message" rows="2"></textarea>
+        </p>
+
+        <p>
+            <label for="antall">Antall deltakere:</label>
+            <input id="antal" type="number" name="Antall frivillige" min="1" max="40">
+        </p>
+
+        <p class="label_text">
+            <label for="komment">Kommenterer:</label>
+            <textarea name="message" rows="5"></textarea>
+        </p>
+        
+        
+            <button class="button" alt="Blid med" onclick="document.location='../suksess.html'">Bli med</button>
+            <button type="button" class="cancelbtn" onclick="document.location='../home.html'">Cancel</button>
+        
+    </fieldset>
+    
+</form>
+
+<footer>
+    &copy Prosjekt 13 - Systemutvikling - Høst 2021
+</footer>
+</body>
+</html>
