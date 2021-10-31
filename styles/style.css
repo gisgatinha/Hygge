@@ -90,6 +90,9 @@ footer{
     display: inline-block;
     width: 100%;
 }
+.button-other{
+    font-size: 12px;
+}
 
 main{
      margin: 2em;
