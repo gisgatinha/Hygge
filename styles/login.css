@@ -137,16 +137,10 @@ button, .button {
   opacity: 0.8;
 }
 
-
-.container {
-  /*padding: 16px;*/
-  display: inline-block;
-}
-
-
 span.psw {
-  float: left;
-  padding-top: 16px;
+
+display: block;
+float: none;
 }
 
 /*FOOTER */
@@ -174,10 +168,7 @@ footer{
     margin-left: 1em;
     margin-right: 1em;
   }
-  span.psw {
-     display: block;
-     float: none;
-  }
+
   button, .cancelbtn, .button {
      width: 100%;
   }
