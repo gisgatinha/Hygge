@@ -93,7 +93,9 @@ input[type=text], input[type=password], input[type=tel], input[type=number] {
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
-
+input {
+  outline-color: indigo;
+}
 label{
   font-weight: bold;
 }
