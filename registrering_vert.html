@@ -17,17 +17,18 @@
     </div>
         <ul class="nav_right">
           <li><a href="home.html">Home</a></li>
-          <li><a href="login.html">Logg inn</a></li>
+          <li><a href="calendar_vert.html">Allerede vert?</a></li>
           <li><a class="active" href="registrering.html">Registrere seg</a></li>
       </ul>
     </nav>
 </header>
 <body>
-      <form action="suksess_vert.html" method="GET">
+      <form action="suksess_vert.html" method="POST">
           
             <h1>Registrere deg som vert</h1>
+            <p><button type="button" class="vert" onclick="document.location='calendar_vert.html'">Jeg er allerede vert</button></p>
             <p>Fyll ut dette skjemaet</p>
-
+            
             <fieldset class="kontakt">
 
                 <label for="navn">Brukernavn:</label>

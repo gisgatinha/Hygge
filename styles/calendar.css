@@ -70,9 +70,9 @@ button, .button {
     border: none;
     border-radius: 15px;
     box-shadow: 0 9px #999;
-}
-
-.button_reg, .cancelbtn{
+  }
+  
+  .button_reg, .cancelbtn{
     background-color: gray;
     color: white;
     padding: 14px 64px;
@@ -80,42 +80,42 @@ button, .button {
     border: none;
     cursor: pointer;
     width: initial;
-
-}
-a:hover{
+  
+  }
+    a:hover{
     color: white;
     border-radius: 0px 5px 5px 0px;
     background-color: darkblue;
-
+    
 }
 
-input, select, textarea {
-   /* width: 100%;*/
-    margin: 0 0 5px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 0;
-    font-family: arial, verdana, sans-serif;
-    font-size: 14px;
-    box-sizing: border-box;
-    -webkit-appearance: none;
-}
-.kontakt input, #aktivitet, .label_text textarea{
-    width: 100%;
-}
-input {
-  outline-color: indigo;
-}
-label{
-    font-weight: bold;
-  }
-.label_text{
-    vertical-align: middle;
-}
+    input, select, textarea {
+       /* width: 100%;*/
+        margin: 0 0 5px 0;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 0;
+        font-family: arial, verdana, sans-serif;
+        font-size: 14px;
+        box-sizing: border-box;
+        -webkit-appearance: none;
+        outline-color: indigo;
+    }
+    
+      
+    .kontakt input, #aktivitet, .label_text textarea{
+        width: 100%;
+    }
+    label{
+        font-weight: bold;
+      }
+    .label_text{
+        vertical-align: middle;
+    }
 
-.mbsc-page {
-    padding: 1em;
-}
+    .mbsc-page {
+        padding: 1em;
+    }
 
   footer{
     position: static; 

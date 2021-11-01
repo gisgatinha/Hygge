@@ -117,7 +117,7 @@ button, .button {
   box-shadow: 0 9px #999;
 }
 
-.button_reg, .cancelbtn{
+.button_reg, .cancelbtn, .vert{
   background-color: gray;
   color: white;
   padding: 14px 64px;
@@ -127,6 +127,7 @@ button, .button {
   width: initial;
 
 }
+
 .registrering{
   text-align: left;
 }
@@ -171,7 +172,7 @@ footer{
     margin-right: 1em;
   }
 
-  button, .cancelbtn, .button {
+  button, .cancelbtn, .button, .vert{
      width: 100%;
   }
 }
