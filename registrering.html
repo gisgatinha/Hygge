@@ -23,15 +23,15 @@
     </nav>
 </header>
 <body>
-      <form action="calender/calendar_logged.html" method="POST">
+      <form action="avtale.html" method="GET">
           
             <h1>Registrering</h1>
             <p>Fyll ut dette skjemaet for å opprette en konto</p>
 
             <fieldset class="kontakt">
             
-                <label for="navnet">Navn</label>
-                <input type="text" placeholder="Skriv navn" name="navnet" required>
+                <label for="navnet">Navn:</label>
+                <input type="text" id="navnet" placeholder="Skriv navn" name="navnet" required>
 
                 <label for="phone"> Telefon: </label>
                 <input type="tel" name="phone" id="phone" required autofocus placeholder="Telefon nummer">
@@ -57,7 +57,7 @@
               <p>Ved å opprette en konto godtar du vår <a href="#" >vilkår & personvern</a>.</p>
       
            
-              <input class="button" type="submit" onclick="handleSubmit()"/>
+              <input class="button" type="submit" onclick="avtaleSubmit()"/>
               <button type="button" class="cancelbtn" onclick="document.location='home.html'">Cancel</button>
     
       </form>

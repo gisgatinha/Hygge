@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles/login.css" id="stylesheet" rel="stylesheet">
+    <title>Registrering ny vert</title>
+    <link rel="icon" type="image/png" href="../smile.png"/>
+    <script type=text/javascript src="../js/submit.js"> </script>
+
+</head>
+<header>
+    <div class="smile_logo">
+        <a href="../home.html"><img class="logo" src="../smile.png" alt="logo Hygge: to emoji-ansikter som smiler"></a>
+        <span id="hygge">Hygge</span>
+    </div>
+        <ul class="nav_right">
+          <li><a href="../home.html">Home</a></li>
+          <li><a href="login.html">Allerede vert?</a></li>
+          <li><a class="active" href="registrering_vert.html">Registrere seg</a></li>
+      </ul>
+    </nav>
+</header>
+<body>
+      <form action="suksess_vert.html" method="POST">
+          
+            <h1>Registrere deg som vert</h1>
+            <p><button type="button" class="vert" onclick="document.location='login.html'">Jeg er allerede vert</button></p>
+            <p>Fyll ut dette skjemaet</p>
+            
+            <fieldset class="kontakt">
+
+                <label for="navn">Brukernavn:</label>
+                <input type="text" id="navn" placeholder="F.eks Sotra sykehjem" name="navn" 
+                required autofocus placeholder="Brukernavn">
+            
+                <label for="navnet">Organisasjons navn</label>
+                <input type="text" id="navnet" placeholder="Organisasjons navn" name="navnet" required>
+
+                <label for="nummer">Organisasjons nummer</label>
+                <input type="number" id="nummer" placeholder="Organisasjons nummer" name="nummer" required>
+
+                <label for="kontakt">Kontaktperson:</label>
+                <input type="text" id="kontaktnavn" placeholder="Kontaktnavn" name="kontaktnavn" 
+                required autofocus placeholder="Kontaktnavn">
+
+                <label for="phone"> Telefon: </label>
+                <input type="tel" id="phone" name="phone"  required autofocus placeholder="Telefon nummer">
+            
+                <label for="email">E-mail:</label>
+                <input type="text" id="email"name="email"  required autofocus placeholder="E-post adresse">
+                           
+                <label for="psw">Passord:</label>
+                <input type="password" id="pwd" placeholder="Passord" name="psw" required>  
+                
+                <label for="psw-repeat">Gjenta Passord</label>
+                <input type="password" placeholder="Skriv passord på nytt" name="psw-repeat" required>
+
+            </fieldset>
+
+              <label>
+                  <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+              </label>
+        
+              <p>Ved å opprette en konto godtar du vår <a href="#" >vilkår & personvern</a>.</p>
+      
+           
+              <input class="button" type="submit" onclick="vertSubmit()"/>
+              <button type="button" class="cancelbtn" onclick="document.location='../home.html'">Cancel</button>
+    
+      </form>
+ 
+    
+    <footer>
+        &copy Prosjekt 13 - Systemutvikling - Høst 2021
+    </footer>
+</body>
+</html>
+
+

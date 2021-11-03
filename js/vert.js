@@ -1,5 +1,6 @@
 
 window.addEventListener('load', () => {
+  
     window.open("../suksess_vert.html");
     const name = localStorage.getItem('BRUKERNAVN');
     const organization = localStorage.getItem('CONTACT');

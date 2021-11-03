@@ -99,7 +99,7 @@ input {
 label{
   font-weight: bold;
 }
-.suksess_vert span{
+.suksess_vert span, .suksess_avtale span{
   font-weight: bold;
   color: indigo;
 }
@@ -125,8 +125,8 @@ button, .button {
   border: none;
   cursor: pointer;
   width: initial;
-
 }
+
 
 .registrering{
   text-align: left;
