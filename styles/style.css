@@ -6,12 +6,17 @@ body{
 }
 
 
-#hygge, h1{
+.hygge, h1{
     font-family: 'Gluten', cursive;
     color: darkblue;
     font-size: 2em;
     text-align: center;
  
+}
+.hygge a,.hygge a:visited, .hygge a:hover{
+    color: darkblue;
+    background: none;
+    text-decoration: none;
 }
 
 main{

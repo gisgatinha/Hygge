@@ -7,37 +7,38 @@
     <link href="../styles/login.css" id="stylesheet" rel="stylesheet">
     <title>Login</title>
     <link rel="icon" type="image/png" href="../smile.png"/>
-    <script type=text/javascript src="js/submit.js"> </script>
+    <script type=text/javascript src="../js/submit.js"> </script>
 
 </head>
 <header>
     <nav class="navigation">
         <section class="smile_logo">
-            <a href="../home.html"><img class="logo" src="../smile.png" alt="logo Hygge: to emoji-ansikter som smiler"></a>
+            <a href="../home.html"><img class="logo" src="../smile.png" 
+              alt="logo Hygge: to emoji-ansikter som smiler"></a>
             <article class="hygge">
               <a href="../home.html">Hygge</a>
-          </article>
+            </article>
         </section>
         <section class="nav_right">
-          <ul >
+          <ul>
             <li><a href="../home.html">Home</a></li>
             <li><a class="active" href="login.html">Logg inn</a></li>
-            <li><a href="registrering_vert.html">Registrere seg</a></li>
-          </ul>
-        </section>
+            <li><a href="registrering.html">Registrere seg</a></li>
+          </ul> 
+      </section>
     </nav>
 </header>
 <body>
 
- <main>
+  <main>
 
-    <h1>Innlogging som vert</h1>  
+    <h1>Innlogging som gjest</h1>  
 
     <section class="imgcontainer">
       <img src="../smile.png" alt="Logo hygge" class="avatar">
     </section>
   
-    <form action="calendar_vert.html" method="GET">  
+    <form action="avtale.html" method="GET">  
         <label for="navn">Brukernavn</label>
         <input type="text" id="navn" placeholder="Brukernavn" name="navn" required>
         <label for="psw">Passord</label>
@@ -52,12 +53,14 @@
     
       <section class="container">
         <article class="psw">Glemte <a href="#">passord?</a></article>
-        <p class="registrering"> Har ikke konto ennå?  
-          <button class="button_reg" onclick="document.location='registrering_vert.html'">Registrere seg</button>
+        <p
+          class="registrering">Har ikke konto ennå?  
+          <button class="button_reg" onclick="document.location='registrering.html'">Registrere seg</button>
         </p>
       </section>
-    
+       
     </main>
+    
     <footer>
         &copy Prosjekt 13 - Systemutvikling - Høst 2021
     </footer>

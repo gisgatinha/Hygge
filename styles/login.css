@@ -20,7 +20,7 @@ header::after {
   
 }
 
-#hygge, h1{
+.hygge, h1{
     font-family: 'Gluten', cursive;
     color: darkblue;
     font-size: 1.5em;
@@ -83,6 +83,12 @@ a:active{
     background-color: darkblue;
 }
 
+.hygge a,.hygge a:visited, .hygge a:hover{
+  color: darkblue;
+  background: none;
+  text-decoration: none;
+}
+
 * {box-sizing: border-box;}
 
 input[type=text], input[type=password], input[type=tel], input[type=number] {
@@ -140,7 +146,7 @@ button, .button {
   opacity: 0.8;
 }
 
-span.psw {
+.psw {
 
 display: block;
 float: none;

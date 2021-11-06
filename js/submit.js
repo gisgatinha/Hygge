@@ -24,3 +24,20 @@ function vertSubmit() {
 
 }
 
+function gjestSubmit() {
+  
+    const username = document.getElementById('navn').value;
+    const name = document.getElementById('navnet').value;
+    const contact = document.getElementById('phone').value;
+    const email = document.getElementById('email').value;
+
+    localStorage.setItem("BRUKERNAVN", username);
+    localStorage.setItem("NAME", name);
+    localStorage.setItem("PHONE", contact);
+    localStorage.setItem("E-MAIL", email);
+    
+    
+
+    return;
+
+}

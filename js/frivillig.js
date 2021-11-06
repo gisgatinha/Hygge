@@ -1,13 +1,11 @@
 window.addEventListener('load', () => {
     
-    window.open("avtale.html");
+    window.open("../gjest/avtale.html");
     
     const name = localStorage.getItem('NAME');
 
     document.getElementById('navn').innerHTML = name;
 });
-
-
 
 function avtaleSubmit() {
   
@@ -32,3 +30,5 @@ function avtaleSubmit() {
     return;
 
 }
+
+
