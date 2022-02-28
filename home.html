@@ -1,4 +1,4 @@
-<!-- font Gluten fra Google fonts. -->
+<!--font Gluten fra Google fonts. -->
 
 
 <!DOCTYPE html>
@@ -12,22 +12,47 @@
     <link rel="icon" type="image/png" href="smile.png"/>
 
 </head>
-<header></header>
+<header>
+    <nav class="navigation">
+        <section class="smile_logo">
+            <a href="../home.html"><img class="logo" src="../smile.png" alt="logo Hygge: to emoji-ansikter som smiler"></a>
+            <article class="hygge">
+              <a href="../home.html">Hygge</a>
+            </article>
+        </section>
+        <section class="nav_right">
+          <ul >
+            <li><a id="active" href="home.html">Home</a></li>
+            <li><a href="gjest/login.html">Logg inn</a></li>
+            <li><a href="gjest/registrering.html">Registrere seg</a></li>
+            <li><a href="vert/login.html">Vert</a></li>
+          </ul>
+        </section>
+    </nav>
+</header>
 <body>
-    <main>
-        <img class= "avatar" src="smile.png" alt="logo Hygge: to emoji-ansikter som smiler">
-        <h1>Velkommen ! </h1>
+    <main class="home">
+        <section class="imgcontainer home_white">
+            <img class= "avatar" src="smile.png" alt="logo Hygge: to emoji-ansikter som smiler">
+
+            <h1>Velkommen ! </h1>
+            <h2>Helse og omsorg trenger hjelp til sosialisering </h2>
+            
+            <h3> Vi trenger deg for å komme på besøk til noen som du kanskje ikke kjenner</h3>
+            <h3> Men hva skal jeg egentlig gjøre ?</h3>
+                <p> Du kan drikke kaffe med de <img src="coffee.png" alt=""> </p>
+                   <p> gå en tur, strikke sammen, spille kort, spiller piano, fiske</p>
+                    <p>eller kanskje bare prate litt? </p>
+        </section>
         <section class="buttons">
-            <button class="button" onclick="document.location='gjest/login.html'">Logg inn som gjest</button>
             <p>
-                <button class="button-other" onclick="document.location='vert/registrering_vert.html'">Bli vert</button>
-                <button class="button-other" onclick="document.location='gjest/registrering.html'">Dra på besøk</button>
+                <button class="button" onclick="document.location='gjest/avtale_gjest.html'">Dra på besøk</button>
             </p>
         </section>
     </main>
     <footer>
         <p>&copy Prosjekt 13 - Systemutvikling - Høst 2021</p>
-        <p>Designed by Gislane Totland</p> 
+        <p>Designed by <a href="https://gislanetotland.netlify.app/">Gislane Totland</a> </p>
     </footer>
 </body>
 </html>

@@ -1,12 +1,28 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Gluten:wght@600&display=swap');
 
+:root{
+  --primaryColor: lightblue;
+  --primaryDarkColor: darkblue;
+  --primaryHoverColor: white;
+  --FocusColor: darkred;
+  --secondaryColor: #fd7e14;
+  --baseColor: #21243D;
+  --baseFont: 'Heebo', sans-serif;
+  --titleFont: 'Gluten', cursive;
+  --regular: 400;
+  --medium: 500;
+  --bold: 700;
+  --black: 900;
+  --Other: indigo;
+}
+
 body{
-    background-color: lightblue;
-    font-family: Arial, Helvetica, sans-serif;
-    color: darkblue;
-    margin-left: 10em;
-    margin-right: 10em;
+  background-color: var(--primaryColor);
+  font-family: var(--baseFont);
+  color: var(--primaryDarkColor);
+  margin-left: 10em;
+  margin-right: 10em;
 }
 
 header::after {
@@ -21,8 +37,8 @@ header::after {
 }
 
 .hygge, h1{
-    font-family: 'Gluten', cursive;
-    color: darkblue;
+    font-family: var(--titleFont);
+    color: var(--primaryDarkColor);
     font-size: 1.5em;
     margin: .7em 0 .3em 0;
     display: inline-block;
@@ -31,13 +47,14 @@ header::after {
 .smile_logo img {
   max-width: 50px;
   float: left;
-  margin: 0 10px 0 0;
+  margin: 0 10px 0 10px;
 }
 
 
 
 .nav_right{
     float: right;
+    font-weight: var(--bold);
 }
 
 .nav_right ul, li{
@@ -47,7 +64,7 @@ header::after {
 
 .nav_right li {
     display: inline-block;
-    margin: 1.4em 1em 1em 1em;
+    margin: 1.4em 2em 1em 1em;
     list-style: none;
     font-size: 12px;
 }
@@ -56,29 +73,31 @@ header::after {
   }
 
 .active{
-    color: #fd7e14;
+    color: var(--secondaryColor);
     font-weight: bold;
+    text-decoration: underline;
 }
 
 a:focus{
-    color: darkred;
+    color: var(--FocusColor);
 }
 
 a:hover{
-    color: white;
-    border-radius: 15px;
-    background-color: darkblue;
+  color: var(--primaryHoverColor);
+  font-size: 14px;
+  background-color: var(--primaryDarkColor);
     
 }
 
 a:active{
-    background-color: darkblue;
+  background-color: var(--primaryDarkColor);
 }
 
 .hygge a,.hygge a:visited, .hygge a:hover{
-  color: darkblue;
+  color: var(--primaryDarkColor);
   background: none;
   text-decoration: none;
+  font-size: inherit;
 }
 
 /* CALENDER */
@@ -151,7 +170,7 @@ caption {
 	padding: 4px;
 	/* Dette er background rundt dato
     background: lightskyblue;*/
-	color: pu;
+	color: purple;
 	width: 20px;
 	border-radius: 50%;
   flex: 0 0 auto;
@@ -252,8 +271,8 @@ td.day {
 }
 
 .submit {
-  background-color: #fd7e14;
-  color: white;
+  background-color: var(--secondaryColor);
+  color: var(--primaryHoverColor);
   padding: 5px 30px;
   border: none;
   cursor: pointer;
@@ -264,7 +283,7 @@ td.day {
 
 .cancelbtn{
   background-color: gray;
-  color: white;
+  color: var(--primaryHoverColor);
   padding: 5px 30px;
   border: none;
   cursor: pointer;
@@ -278,7 +297,7 @@ td.day {
   font-size:24px;
   margin: 50px auto 0;
   float: right;
-  color: #fd7e14;
+  color: var(--secondaryColor);
 }
 
 .bell a:visited, .bell a:hover{
@@ -288,14 +307,13 @@ td.day {
 /*FOOTER */
 
 footer{
-    position: static; 
-    bottom: 1%;
+
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--baseFont);
     font-size: 80%;
     width: 100%;
-    color:darkblue;
-    margin-top: 10px;
+    color: #999;
+    padding: 5px 0;
   
   }
 /* ============================

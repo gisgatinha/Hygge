@@ -1,12 +1,27 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Gluten:wght@600&display=swap');
+:root{
+  --primaryColor: lightblue;
+  --primaryDarkColor: darkblue;
+  --primaryHoverColor: white;
+  --FocusColor: darkred;
+  --secondaryColor: #fd7e14;
+  --baseColor: #21243D;
+  --baseFont: 'Heebo', sans-serif;
+  --titleFont: 'Gluten', cursive;
+  --regular: 400;
+  --medium: 500;
+  --bold: 700;
+  --black: 900;
+  --Other: indigo;
+}
+
 
 body{
-    background-color: lightblue;
-    font-family: Arial, Helvetica, sans-serif;
-    color: darkblue;
-    margin-left: 10em;
-    margin-right: 10em;
+    background-color: var(--primaryColor);
+    font-family: var(--baseFont);
+    color: var(--primaryDarkColor);
+    margin: 0 10em 0 10em;
 }
 
 header::after {
@@ -21,17 +36,21 @@ header::after {
 }
 
 .hygge, h1{
-    font-family: 'Gluten', cursive;
-    color: darkblue;
+    font-family: var(--titleFont);
+    color: var(var(--primaryDarkColor));
     font-size: 1.5em;
     margin: .7em 0 .3em 0;
     display: inline-block;
 }
-
+h2, h3{
+  color: var(--baseColor);
+  font-family: var(--baseFont);
+  margin: .7em 0 .3em 0;
+}
 .smile_logo img {
   max-width: 50px;
   float: left;
-  margin: 0 10px 0 0;
+  margin: 0 10px 0 10px;
 }
 
 .imgcontainer {
@@ -41,11 +60,12 @@ header::after {
 
 img.avatar {
   width: 20%;
-  /*border-radius: 50%; */
+
 }
 
 .nav_right{
     float: right;
+    font-weight: var(--bold);
 }
 
 .nav_right ul, li{
@@ -55,7 +75,7 @@ img.avatar {
 
 .nav_right li {
     display: inline-block;
-    margin: 1.4em 1em 1em 1em;
+    margin: 1.4em 1.8em 1em 1em;
     list-style: none;
     font-size: 12px;
 }
@@ -63,30 +83,32 @@ img.avatar {
     text-decoration: none;
   }
 
-.active{
-    color: #fd7e14;
+#active{
+    color: var(--secondaryColor);
     font-weight: bold;
+    text-decoration: underline;
 }
 
 a:focus{
-    color: darkred;
+    color: var(--FocusColor);
 }
 
 a:hover{
-    color: white;
-    border-radius: 0px 5px 5px 0px;
-    background-color: darkblue;
+    color: var(--primaryHoverColor);
+    font-size: 14px;
+    background-color: var(--primaryDarkColor);
     
 }
 
 a:active{
-    background-color: darkblue;
+    background-color: var(--primaryDarkColor);
 }
 
 .hygge a,.hygge a:visited, .hygge a:hover{
-  color: darkblue;
+  color: var(--primaryDarkColor);
   background: none;
   text-decoration: none;
+  font-size: inherit;
 }
 
 * {box-sizing: border-box;}
@@ -100,20 +122,20 @@ input[type=text], input[type=password], input[type=tel], input[type=number] {
   box-sizing: border-box;
 }
 input {
-  outline-color: indigo;
+  outline-color: var(--Other);
 }
 label{
   font-weight: bold;
 }
 .suksess_vert span, .suksess_avtale span{
   font-weight: bold;
-  color: indigo;
+  color: var(--Other);
 }
 
 
 button, .button {
-  background-color: #fd7e14;
-  color: white;
+  background-color: var(--secondaryColor);
+  color: var(--primaryHoverColor);
   padding: 14px 64px;
   margin: 8px 0;
   border: none;
@@ -124,8 +146,8 @@ button, .button {
 }
 
 .button_reg, .cancelbtn, .vert{
-  background-color: gray;
-  color: white;
+  background-color: grey;
+  color: var(--primaryHoverColor);
   padding: 14px 64px;
   margin: 8px 0;
   border: none;
@@ -158,10 +180,10 @@ footer{
   position: static; 
   bottom: 1%;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--baseFont);
   font-size: 80%;
   width: 100%;
-  color:darkblue;
+  color: #999;
   margin-top: 10px;
 
 }
@@ -172,10 +194,9 @@ footer{
 
 
 /* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   body{
-    margin-left: 1em;
-    margin-right: 1em;
+    margin: 0 0.8em 0 0.8em;
   }
 
   button, .cancelbtn, .button, .vert{

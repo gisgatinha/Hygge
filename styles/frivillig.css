@@ -1,12 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Gluten:wght@600&display=swap');
 
+:root{
+    --primaryColor: lightblue;
+    --primaryDarkColor: darkblue;
+    --primaryHoverColor: white;
+    --FocusColor: darkred;
+    --secondaryColor: #fd7e14;
+    --baseColor: #21243D;
+    --baseFont: 'Heebo', sans-serif;
+    --titleFont: 'Gluten', cursive;
+    --regular: 400;
+    --medium: 500;
+    --bold: 700;
+    --black: 900;
+    --Other: indigo;
+  }
+
 body {
-    margin: 0;
+    margin: 0 10em 0 10em;
     padding: 0;
-    background-color: lightblue;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 10em;
-    margin-right: 10em;
+    background-color: var(--primaryColor);
+    font-family: var(--baseFont);
 }
 
 header::after {
@@ -35,11 +49,12 @@ h2{
 .smile_logo img {
     max-width: 50px;
     float: left;
-    margin: 0 10px 0 0;
+    margin: 0 10px 0 10px;
 }
 
 .nav_right{
     float: right;
+    font-weight: var(--bold);
 }
 
 .nav_right ul, li{
@@ -49,7 +64,7 @@ h2{
 
 .nav_right li {
     display: inline-block;
-    margin: 1.4em 1em 1em 1em;
+    margin: 1.4em 2em 1em 1em;
     list-style: none;
     font-size: 12px;
 }
@@ -85,7 +100,7 @@ button, .button {
 }
 a:hover{
     color: white;
-    border-radius: 0px 5px 5px 0px;
+    font-size: 14px;
     background-color: darkblue;
 
 }
@@ -94,6 +109,7 @@ a:hover{
     color: darkblue;
     background: none;
     text-decoration: none;
+    font-size: inherit;
 }
 
 input, select, textarea {
@@ -124,22 +140,18 @@ label{
 }
 
 footer{
-    position: static; 
-    bottom: 1%;
+
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--baseFont);
     font-size: 80%;
     width: 100%;
-    color:darkblue;
-    padding: 1em;
-    margin-top: 3pt;
+    color: #999;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
 body {
 
-    margin-left: 1em;
-    margin-right: 1em;
+    margin: 0 1em 0 1em;
 }
 button, .cancelbtn, .button {
   
