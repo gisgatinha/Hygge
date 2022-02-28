@@ -64,7 +64,7 @@ header::after {
 
 .nav_right li {
     display: inline-block;
-    margin: 1.4em 2em 1em 1em;
+    margin: 1.4em 1.6em 1em 1em;
     list-style: none;
     font-size: 12px;
 }
@@ -84,7 +84,7 @@ a:focus{
 
 a:hover{
   color: var(--primaryHoverColor);
-  font-size: 14px;
+  font-size: 13px;
   background-color: var(--primaryDarkColor);
     
 }
