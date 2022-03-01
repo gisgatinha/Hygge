@@ -190,9 +190,12 @@ footer{
 }
 */
 body{
-     margin: 0 0.5em 0 0.5em;
+     margin: 0 0.8em 0 0.8em;
   }
+main{
 
+    padding: 1em;
+ }
 h1{
       font-size: 30px;
   }
