@@ -23,7 +23,7 @@ body{
 }
 
 main{
-
+    margin-top: 2em;
     padding: 2em;
  }
 
@@ -192,10 +192,7 @@ footer{
 body{
      margin: 0 0.8em 0 0.8em;
   }
-main{
-    margin-top: 2em;
-    padding: 1em;
- }
+
 h1{
       font-size: 30px;
   }

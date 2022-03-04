@@ -17,10 +17,17 @@
   }
 
 body {
+    /*
     margin: 0 10em 0 10em;
     padding: 0;
     background-color: var(--primaryColor);
     font-family: var(--baseFont);
+    */
+    background-color: var(--primaryColor);
+    font-family: var(--baseFont);
+    color: var(--primaryDarkColor);
+    margin-left: 10em;
+    margin-right: 10em;
 }
 
 header::after {
@@ -34,8 +41,8 @@ header::after {
 }
 
 .hygge, h1{
-    font-family: 'Gluten', cursive;
-    color: darkblue;
+    font-family: var(--titleFont);
+    color: var(--primaryDarkColor);
     font-size: 1.5em;
     margin: .7em 0 .3em 0;
     display: inline-block;
@@ -98,18 +105,32 @@ button, .button {
     width: initial;
 
 }
-a:hover{
-    color: white;
-    font-size: 13px;
-    background-color: darkblue;
+#active{
+    color: var(--secondaryColor);
+    font-weight: bold;
+    text-decoration: underline;
+}
 
+a:focus{
+    color: var(--FocusColor);
+}
+
+a:hover{
+    color: var(--primaryHoverColor);
+    font-size: 13px;
+    background-color: var(--primaryDarkColor);
+    
+}
+
+a:active{
+    background-color: var(--primaryDarkColor);
 }
 
 .hygge a,.hygge a:visited, .hygge a:hover{
-    color: darkblue;
-    background: none;
-    text-decoration: none;
-    font-size: inherit;
+  color: var(--primaryDarkColor);
+  background: none;
+  text-decoration: none;
+  font-size: inherit;
 }
 
 input, select, textarea {
