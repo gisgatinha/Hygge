@@ -144,7 +144,9 @@ input, select, textarea {
     -webkit-appearance: none;
     outline-color: indigo;
 }
-         
+.kontakt{
+    margin-top: 2em;
+}        
 .kontakt input, #aktivitet, .label_text textarea{
     width: 100%;
 }
