@@ -17,12 +17,7 @@
   }
 
 body {
-    /*
-    margin: 0 10em 0 10em;
-    padding: 0;
-    background-color: var(--primaryColor);
-    font-family: var(--baseFont);
-    */
+   
     background-color: var(--primaryColor);
     font-family: var(--baseFont);
     color: var(--primaryDarkColor);
@@ -119,8 +114,10 @@ a:hover{
     color: var(--primaryHoverColor);
     font-size: 13px;
     background-color: var(--primaryDarkColor);
-    
 }
+.nav_right li a:hover{
+    padding: 1em;
+  }
 
 a:active{
     background-color: var(--primaryDarkColor);
@@ -169,6 +166,10 @@ footer{
     font-size: 80%;
     width: 100%;
     color: #999;
+}
+footer a{
+    color: #999;
+    font-weight: var(--bold);
 }
 
 @media screen and (max-width: 768px) {

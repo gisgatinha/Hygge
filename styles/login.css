@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Gluten:wght@600&display=swap');
+
 :root{
   --primaryColor: lightblue;
   --primaryDarkColor: darkblue;
@@ -37,7 +38,7 @@ header::after {
 
 .hygge, h1{
     font-family: var(--titleFont);
-    color: var(var(--primaryDarkColor));
+    color: var(--primaryDarkColor);
     font-size: 1.5em;
     margin: .7em 0 .3em 0;
     display: inline-block;
@@ -97,7 +98,9 @@ a:hover{
     color: var(--primaryHoverColor);
     font-size: 13px;
     background-color: var(--primaryDarkColor);
-    
+}
+.nav_right li a:hover{
+  padding: 1em;
 }
 
 a:active{
@@ -109,6 +112,7 @@ a:active{
   background: none;
   text-decoration: none;
   font-size: inherit;
+
 }
 
 * {box-sizing: border-box;}
@@ -186,6 +190,10 @@ footer{
   color: #999;
   margin-top: 10px;
 
+}
+footer a{
+  color: #999;
+  font-weight: var(--bold);
 }
 
 .takk_registrering{

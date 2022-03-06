@@ -86,7 +86,7 @@ a:hover{
   color: var(--primaryHoverColor);
   font-size: 13px;
   background-color: var(--primaryDarkColor);
-    
+  padding: 1em;
 }
 
 a:active{
@@ -314,8 +314,12 @@ footer{
     width: 100%;
     color: #999;
     padding: 5px 0;
-  
   }
+  footer a{
+    color: #999;
+    font-weight: var(--bold);
+  }
+
 /* ============================
 				Mobile Responsiveness
    ============================*/

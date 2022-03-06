@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Gluten:wght@600&display=swap');
+
 :root{
     --primaryColor: lightblue;
     --primaryDarkColor: darkblue;
@@ -115,13 +116,16 @@ h2, h3{
       color: var(--primaryHoverColor);
       font-size: 13px;
       background-color: var(--primaryDarkColor);
-      
   }
   
   a:active{
       background-color: var(--primaryDarkColor);
   }
-  
+
+  .nav_right li a:hover{
+    padding: 1em;
+  }
+
 .hygge a,.hygge a:visited, .hygge a:hover{
     color: var(--primaryDarkColor);
     background: none;
@@ -174,7 +178,10 @@ footer{
     width: 100%;
     color: #999;
     padding: 5px 0;
-
+}
+footer a{
+    color: #999;
+    font-weight: var(--bold);
 }
 
 @media (max-width: 768px) {
