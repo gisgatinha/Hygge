@@ -76,7 +76,7 @@ img.avatar {
 
 .nav_right li {
     display: inline-block;
-    margin: 1.4em 1.6em 1em 1em;
+    margin: 1.4em 1em 1em 1em;
     list-style: none;
     font-size: 12px;
 }
@@ -100,7 +100,7 @@ a:hover{
     background-color: var(--primaryDarkColor);
 }
 .nav_right li a:hover{
-  padding: 1em;
+  padding: 1em 0.5em 1em 0.5em;
 }
 
 a:active{
